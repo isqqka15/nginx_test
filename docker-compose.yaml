@@ -1,0 +1,9 @@
+services:
+  nginx:
+    build:
+      context:
+        ./main_dir/
+    ports:
+      - "8020:8020"
+    working_dir: /nginx
+    container_name: nginx
